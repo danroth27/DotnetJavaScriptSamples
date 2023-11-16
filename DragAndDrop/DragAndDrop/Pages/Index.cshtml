@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag Drop Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
+    <style>
+
+        #drag-1, #drag-2 {
+            width: 25%;
+            height: 100%;
+            min-height: 6.5em;
+            margin: 10%;
+
+            background-color: #29e;
+            color: white;
+
+            border-radius: 0.75em;
+            padding: 4%;
+
+            -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+        }
+   </style>
+</head>
+<body>
+    <div id="demo">
+        <div id="drag-1" class="draggable">
+            <p> You can drag one element </p>
+        </div>
+        <div id="drag-2" class="draggable">
+            <p> with each pointer </p>
+        </div>
+    </div>
+</body>
+</html>

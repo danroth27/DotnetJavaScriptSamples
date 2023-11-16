@@ -1,0 +1,42 @@
+{
+  "name": "draganddrop.assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:%npm_config_build_config%",
+    "build:Release": "npx rollup -c ./rollup.config.ts --configPlugin typescript --config-intermediate-output-dir ./dist/Release --config-configuration Release",
+    "build:Debug": "npx rollup -c ./rollup.config.ts --configPlugin typescript --config-intermediate-output-dir ./dist/Debug --config-configuration Debug",
+    "clean": "tsc --build --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@rollup/plugin-commonjs": "25.0.4",
+    "@rollup/plugin-node-resolve": "15.2.1",
+    "@rollup/plugin-typescript": "11.1.3",
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0",
+    "inspectpack": "^4.7.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.5",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-license": "^2.8.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "terser": "^5.7.2",
+    "ts-loader": "^9.2.5",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "interactjs": "^1.10.19"
+  }
+}
