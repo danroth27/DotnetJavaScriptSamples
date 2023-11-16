@@ -1,0 +1,30 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject RazorClassLibrary1.ExampleJsInterop Default
+@inject RclNoBundler.ExampleJsInterop NoBundler
+@inject RclESBuild.ExampleJsInterop ESBuild
+@inject RclParcel.ExampleJsInterop Parcel
+@inject RclRollup.ExampleJsInterop Rollup
+@inject RclVite.ExampleJsInterop Vite
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<ul>
+    <li><button class="btn btn-primary" @onclick="async () => response = await Default.Prompt(question)">Default</button></li>
+    <li><button class="btn btn-primary" @onclick="async () => response = await NoBundler.Prompt(question)">No bundler</button></li>
+    <li><button class="btn btn-primary" @onclick="async () => response = await ESBuild.Prompt(question)">ESbuild</button></li>
+    <li><button class="btn btn-primary" @onclick="async () => response = await Parcel.Prompt(question)">Parcel</button></li>
+    <li><button class="btn btn-primary" @onclick="async () => response = await Rollup.Prompt(question)">Rollup</button></li>
+    <li><button class="btn btn-primary" @onclick="async () => response = await Vite.Prompt(question)">Vite</button></li>
+</ul>
+
+<p>Response: @response</p>
+
+@code {
+    string question = "What is your favorite color?";
+    string response = "";
+}

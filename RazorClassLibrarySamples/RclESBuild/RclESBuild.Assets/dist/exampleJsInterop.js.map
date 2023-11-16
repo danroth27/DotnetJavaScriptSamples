@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/exampleJsInterop.ts"],
+  "sourcesContent": ["export function showPrompt(message: string) {\r\n  return prompt(message, 'Type anything here');\r\n}\r\n"],
+  "mappings": "AAAO,SAASA,EAAWC,EAAiB,CAC1C,OAAO,OAAOA,EAAS,oBAAoB,CAC7C",
+  "names": ["showPrompt", "message"]
+}

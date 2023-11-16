@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.58794-alpha">
+  <PropertyGroup>
+    <DebugAssetsDirectory>dist\</DebugAssetsDirectory>
+    <StaticWebAssetSourceId>RclNoBundler</StaticWebAssetSourceId>
+  </PropertyGroup>
+</Project>

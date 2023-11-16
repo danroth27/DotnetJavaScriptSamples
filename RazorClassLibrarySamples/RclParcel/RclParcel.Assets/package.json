@@ -1,0 +1,24 @@
+{
+  "name": "rclparcel.assets",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/exampleJsInterop.ts",
+  "module": "dist/exampleJsInterop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build",
+    "clean": "rimraf ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "parcel": "^2.10.0",
+    "@types/node": "^20.8.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.51.0",
+    "typescript": "^5.2.2"
+  }
+}

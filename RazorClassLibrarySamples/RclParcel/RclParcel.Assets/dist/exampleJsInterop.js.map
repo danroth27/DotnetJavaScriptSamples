@@ -1,0 +1,1 @@
+{"mappings":"AAAO,SAAS,yCAAW,OAAe;IACxC,OAAO,OAAO,SAAS;AACzB","sources":["src/exampleJsInterop.ts"],"sourcesContent":["export function showPrompt(message: string) {\r\n  return prompt(message, 'Type anything here');\r\n}\r\n"],"names":[],"version":3,"file":"exampleJsInterop.js.map"}

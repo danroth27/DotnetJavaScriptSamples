@@ -1,0 +1,1 @@
+{"version":3,"file":"exampleJsInterop.js","sources":["./src/exampleJsInterop.ts"],"sourcesContent":["export function showPrompt(message: string) {\r\n  return prompt(message, 'Type anything here');\r\n}\r\n"],"names":["showPrompt","message","prompt"],"mappings":"wCAAO,SAASA,EAAWC,CAAe,EACxC,OAAOC,OAAOD,EAAS,qBACzB,C"}
