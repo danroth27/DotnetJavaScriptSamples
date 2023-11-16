@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34225.316
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebApp", "BlazorWebApp\BlazorWebApp.csproj", "{58173D5F-3804-458E-B136-458747DAADF0}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "BlazorWebApp.ReactComponents", "BlazorWebApp.ReactComponents\BlazorWebApp.ReactComponents.esproj", "{482CCCDB-C0E1-4DD8-8501-0038CEA60EF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58173D5F-3804-458E-B136-458747DAADF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58173D5F-3804-458E-B136-458747DAADF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58173D5F-3804-458E-B136-458747DAADF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58173D5F-3804-458E-B136-458747DAADF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{482CCCDB-C0E1-4DD8-8501-0038CEA60EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482CCCDB-C0E1-4DD8-8501-0038CEA60EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482CCCDB-C0E1-4DD8-8501-0038CEA60EF7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{482CCCDB-C0E1-4DD8-8501-0038CEA60EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482CCCDB-C0E1-4DD8-8501-0038CEA60EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{482CCCDB-C0E1-4DD8-8501-0038CEA60EF7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8459E5B9-7FBD-4442-9903-11A182DE1D25}
+	EndGlobalSection
+EndGlobal
