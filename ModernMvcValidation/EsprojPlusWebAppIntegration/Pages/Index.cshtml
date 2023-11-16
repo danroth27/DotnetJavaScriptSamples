@@ -1,0 +1,86 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form novalidate>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Customer.Name" class="control-label"></label>
+                <input asp-for="Customer.Name" class="form-control" />
+                <span asp-validation-for="Customer.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Age" class="control-label"></label>
+                <input asp-for="Customer.Age" class="form-control" />
+                <span asp-validation-for="Customer.Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.PassportNumber" class="control-label"></label>
+                <input asp-for="Customer.PassportNumber" class="form-control" />
+                <span asp-validation-for="Customer.PassportNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.ConfirmPassportNumber" class="control-label"></label>
+                <input asp-for="Customer.ConfirmPassportNumber" class="form-control" />
+                <span asp-validation-for="Customer.ConfirmPassportNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Address" class="control-label"></label>
+                <input asp-for="Customer.Address" class="form-control" />
+                <span asp-validation-for="Customer.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.City" class="control-label"></label>
+                <input asp-for="Customer.City" class="form-control" />
+                <span asp-validation-for="Customer.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Region" class="control-label"></label>
+                <input asp-for="Customer.Region" class="form-control" />
+                <span asp-validation-for="Customer.Region" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.PostalCode" class="control-label"></label>
+                <input asp-for="Customer.PostalCode" class="form-control" />
+                <span asp-validation-for="Customer.PostalCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Country" class="control-label"></label>
+                <input asp-for="Customer.Country" class="form-control" />
+                <span asp-validation-for="Customer.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Phone" class="control-label"></label>
+                <input asp-for="Customer.Phone" class="form-control" />
+                <span asp-validation-for="Customer.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Fax" class="control-label"></label>
+                <input asp-for="Customer.Fax" class="form-control" />
+                <span asp-validation-for="Customer.Fax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.HomeUrl" class="control-label"></label>
+                <input asp-for="Customer.HomeUrl" class="form-control" />
+                <span asp-validation-for="Customer.HomeUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.Email" class="control-label"></label>
+                <input asp-for="Customer.Email" class="form-control" />
+                <span asp-validation-for="Customer.Email" class="text-danger"></span>
+            </div>
+
+            <!-- Submit button -->
+            <button type=submit value=Submit>Submit</button>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="module" src="_content/ModernMvcValidation/index.js"></script>
+}
